@@ -18,6 +18,23 @@ img {
     height: auto;
 }
 
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+
 h1, 
 h2, 
 h3, 
@@ -40,6 +57,22 @@ a {
     list-style-type: none;
     text-decoration: none;
 }
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+.mobile-menu-button {
+    width: 24px;
+    height: 24px;
+    padding: 4.8px 3.6px;
+    background: transparent;
+    fill: #000;
+    line-height: 0;
+}
+
+
 
 .svg{
     fill: #f4f4fd;
