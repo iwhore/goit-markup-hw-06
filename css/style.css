@@ -217,7 +217,7 @@ a {
     background-color: #2e2f42;
     background-size: cover;
     background-repeat: no-repeat;
-    max-width: 1440px;
+    max-width: 320px;
     background-position: center;
     margin: 0 auto;
     padding-top: 72px;
@@ -271,7 +271,7 @@ a {
 .description{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 72px;
 }
 
@@ -498,6 +498,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.paragraph{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
+}
 /* PORTFOLIO MOBILE */
 
 /* FOOTER MOBILE */
@@ -529,6 +538,16 @@ footer{
 
 .footer-content{
     justify-content: center;
+}
+
+.networks-p{
+    margin-bottom: 16px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.32px;
 }
 
 .p_footer{
@@ -621,7 +640,7 @@ footer{
 /* FOOTER MOBILE */
 @media screen and (min-width: 320px) {
     .container{
-        max-width: 288px;
+        max-width: 320px;
         margin-right: auto;
         margin-left: auto;
     }    
@@ -629,7 +648,7 @@ footer{
 
 @media screen and (min-width: 768px) {
     .container{
-        max-width: 736px;
+        max-width: 768px;
     }
 
     .container .a-list:hover,
@@ -711,6 +730,11 @@ footer{
 
     .head{
         align-items: center;
+        padding: 6px 0;
+    }
+
+    .sec{
+        max-width: 768px;
     }
 
     .description{
@@ -724,6 +748,7 @@ footer{
 
     .lidescription{
         max-width: 346px;
+        align-items: flex-start;
     }
 
     .maintittle{
@@ -744,9 +769,12 @@ footer{
         row-gap: 72px;  
     }
 
+    .liapps{
+        width: 356px;
+    }
+
     .footer-container{
-        justify-content: center;
-         align-items: flex-start;
+        align-items: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 24px;
@@ -763,7 +791,7 @@ footer{
     }
 
     .networks-p{
-        padding-left: 16px;
+
     }
 
     .p_footer,
@@ -772,6 +800,10 @@ footer{
     .footer-logo
     {
         text-align: left;
+    }
+
+    .social-networks{
+        margin: 0;
     }
 
     /*модальне вікно*/
@@ -841,6 +873,14 @@ footer{
 
 .form-container{
     margin-bottom: 8px;
+}
+
+.form-label{
+    width: 264px;
+}
+
+.form-input{
+    margin: 0;
 }
 
 .modal-form-container{
@@ -963,9 +1003,17 @@ footer{
         padding-bottom: 120px;
     }
 
+    .sec{
+        max-width: 1440px;
+    }
+
     .container{
-        max-width: 1128px;
-    }    
+        max-width: 1440px;
+    }
+    
+    .head{
+        padding: 24px 0;
+    }
 
     .adress .menu{
         display: flex;
@@ -979,14 +1027,18 @@ footer{
         font-size: 56px;
     }
 
+    .liapps{
+        width: 360px;
+    }
+
     .description{
         flex-direction: row;
         flex-wrap: nowrap;
-        
+        max-width: 1128px;
     }
 
     .lidescription{
-        text-align: left;
+        align-items: flex-start;
     }
 
     .sec .container{
@@ -1018,10 +1070,33 @@ footer{
     }
 
     .footer-container{
-        align-items: flex-start;
+        max-width: 1158px;
+        justify-content: space-between;
+        align-items: center;
         flex-wrap: nowrap;
         gap: 0px;
     }
-    
 }
+
+/* ---------- RETINA ---------- */
+@media screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx),
+screen and (min-divice-pixel-ratio: 2)
+{
+    .sec{
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-office@2x.jpg);
+        background-color: #2e2f42;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        color: #fff;
+    }
+}
+    
+/* ---------- RETINA ---------- */
 
