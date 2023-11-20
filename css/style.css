@@ -223,6 +223,7 @@ a {
     padding-top: 72px;
     padding-bottom: 72px;
     color: #fff;
+    height: 432px;
 }
 
 .maintittle{
@@ -735,6 +736,7 @@ footer{
 
     .sec{
         max-width: 768px;
+        height: 436px;
     }
 
     .description{
@@ -1005,6 +1007,9 @@ footer{
 
     .sec{
         max-width: 1440px;
+        height: 600px;
+        padding-top: 188px;
+        padding-bottom: 188px;
     }
 
     .container{
@@ -1075,6 +1080,10 @@ footer{
         align-items: center;
         flex-wrap: nowrap;
         gap: 0px;
+    }
+
+    .headinfo{
+        max-width: 1128px;
     }
 }
 
