@@ -127,6 +127,15 @@ a {
     transition: transform 250ms linear;
 }
 
+.mobile-nav-link.color{
+    color: #404BBF;
+}
+
+.contacts.color{
+    color: #404BBF;
+}
+
+
 .mobile-menu.is-open{
     transform: translateX(0%);
 }
